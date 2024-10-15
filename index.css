@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab", serif;;
+}
+#container{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+#logo{
+    width: 150px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+.list-items{
+    display: inline;
+}
+.links{
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+    color: black;
+
+}
+/* psedo class */
+.links:hover{
+    color: brown;
+    text-decoration: underline;
+}
+.home-contant{
+    margin: 13% 0% 0% 8%;
+
+}
+#uname{
+    font-size: 60px;
+    font-family: "Lobster Two", sans-serif;
+    margin-bottom: 25px;
+}
+#lname{
+    color: brown;
+}
+.personal-details{
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+#dwnld{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.home-images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0;
+    right: 40px;
+}
+.group{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    transition: left 2s,bottom 2s;
+
+}
+.home-images:hover #shape{
+    bottom: 20px;
+}
+.home-images:hover #boy{
+    left: -20px;
+}
+
+#about{
+    margin: 15% 8% 0% 8%;
+}
+.section-head{
+    text-align: center;
+}
+.main-head{
+    font-size: 40px;
+    font-family: "Pacifico", cursive;
+}
+.sub-head{
+    font-size: 20px;
+    color: green;
+    font-family: "Pacifico", cursive;
+}
+.about-img>img{
+    width: 400px;
+}
+.about-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.about-contant{
+    font-size: 18px;
+    padding: 5px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.information{
+    margin-top: 10px;
+}
+.info-box>span{
+    margin-left: 10px;
+}
+.skill{
+    margin: 8% 8% 0% 8%;
+}
+
+.skill-body{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 20px;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 50px;
+}
+#myskill{
+    width: 100%;
+} 
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    position: relative;
+}
+.bar-head,.bar-percentage{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.base-bar{
+    width: 100%;
+    background-color: black;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0;
+}
+.html{
+    width: 90%;
+    background-color: brown;
+}
+.css{
+    width: 87%;
+    background-color: brown;
+}
+.boot{
+    width: 85%;
+    background-color: brown;
+}
+.java{
+    width: 80%;
+    background-color: brown;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(160, 102, 0);
+    margin-left: 10px;
+}
+.icon-collection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}  
+.social{
+    color: black;
+}
+.icon i{
+    font-size: 35px;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,white,orange,red,yellow);
+    animation: rotate 2s;
+}
+.social:hover{
+    color: white;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+}
+#copy{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    
+}
+#arrow{
+    float: right;
+    margin: -40px 30px 30px 30px;
+ 
+  /* webpage modification   */
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: red;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 10px;
+}
